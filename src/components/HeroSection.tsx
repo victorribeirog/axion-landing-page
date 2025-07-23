@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Bot, Clock, Calendar, MessageSquare, Star } from "lucide-react";
-import aiChatDemo from "@/assets/ai-chat-demo.jpg";
+import WhatsAppInterface from "./WhatsAppInterface";
 
 const HeroSection = () => {
   return (
@@ -48,11 +48,7 @@ const HeroSection = () => {
             <div className="absolute -inset-4 bg-cobalt/20 rounded-full blur-3xl opacity-50" />
             
             <div className="relative bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/10 shadow-2xl shadow-black/20">
-              <img 
-                src={aiChatDemo} 
-                alt="Demonstração do Agente IA no WhatsApp"
-                className="w-full h-auto rounded-lg"
-              />
+              <WhatsAppInterface />
               <div className="mt-4 text-center">
                 <p className="font-medium text-primary-foreground/90">
                   Agente em Ação no WhatsApp
