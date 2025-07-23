@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import ProblemsSection from "@/components/ProblemsSection";
+import SolutionSection from "@/components/SolutionSection";
+import ProcessSection from "@/components/ProcessSection";
+import ProofSection from "@/components/ProofSection";
+import CustomizationSection from "@/components/CustomizationSection";
+import FinalCTASection from "@/components/FinalCTASection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* 1. Hero Section - Abertura Impactante */}
+      <HeroSection />
+      
+      {/* 2. Problems Section - Conexão Emocional */}
+      <ProblemsSection />
+      
+      {/* 3. Solution Section - A Solução IA */}
+      <SolutionSection />
+      
+      {/* 4. Process Section - Como Funciona */}
+      <ProcessSection />
+      
+      {/* 5. Proof Section - Credibilidade + Autoridade */}
+      <ProofSection />
+      
+      {/* 6. Customization Section - Solução Personalizada */}
+      <CustomizationSection />
+      
+      {/* 7. Final CTA Section - Garantia + Última Chamada */}
+      <FinalCTASection />
     </div>
   );
 };
