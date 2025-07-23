@@ -1,110 +1,136 @@
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Clock, DollarSign, Star, Quote } from "lucide-react";
+import { TrendingUp, Clock, DollarSign, CheckCircle, XCircle } from "lucide-react";
+import { 
+  Table, 
+  TableBody, 
+  TableCell, 
+  TableHead, 
+  TableHeader, 
+  TableRow 
+} from "@/components/ui/table";
 
 const ProofSection = () => {
   const statistics = [
     {
       icon: Clock,
-      value: "+85%",
-      description: "de redução no tempo de resposta"
+      value: "90%",
+      description: "de redução no tempo médio de primeira resposta"
     },
     {
       icon: TrendingUp,
-      value: "+60%",
-      description: "de aumento na conversão de consultas"
+      value: "40%",
+      description: "de aumento na conversão de agendamentos via WhatsApp"
     },
     {
       icon: DollarSign,
-      value: "-45%",
-      description: "de redução de custos operacionais"
-    }
-  ];
-
-  const testimonials = [
-    {
-      text: "Antes, minha recepcionista não dava conta do WhatsApp. Agora, o agente IA responde tudo e agenda automaticamente!",
-      author: "Dra. Ana Silva",
-      clinic: "Clínica BellaSkin",
-      rating: 5
-    },
-    {
-      text: "Nossos pacientes adoram o atendimento 24h. Não perdemos mais nenhuma consulta por falta de resposta rápida.",
-      author: "Dr. Carlos Mendes",
-      clinic: "Centro Médico Vida",
-      rating: 5
-    },
-    {
-      text: "O agente IA fala exatamente como nossa equipe. Os pacientes nem percebem que é um robô!",
-      author: "Dra. Marina Costa",
-      clinic: "Clínica Renovar",
-      rating: 5
+      value: "35%",
+      description: "de redução nos custos operacionais de atendimento"
     }
   ];
 
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        {/* Estatísticas */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-12">
-            Resultados Comprovados
+        {/* Título e Estatísticas */}
+        <div className="text-center mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            Resultados que Falam por Si
           </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {statistics.map((stat, index) => (
-              <div key={index} className="bg-card border rounded-2xl p-8 text-center shadow-elegant hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-cobalt/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-8 h-8 text-cobalt" />
-                </div>
-                <div className="text-4xl font-bold text-cobalt mb-2">
-                  {stat.value}
-                </div>
-                <p className="text-muted-foreground font-medium">
-                  {stat.description}
-                </p>
-              </div>
-            ))}
-          </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Os números comprovam o impacto do Agente IA na eficiência e crescimento das clínicas.
+          </p>
         </div>
         
-        {/* Depoimentos */}
-        <div className="space-y-12">
-          <h3 className="text-3xl font-bold text-center text-foreground mb-8">
-            O que nossos clientes dizem
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
+          {statistics.map((stat, index) => (
+            <div 
+              key={index} 
+              className="bg-card border rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+              style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+            >
+              <div className="w-16 h-16 bg-cobalt/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <stat.icon className="w-8 h-8 text-cobalt" />
+              </div>
+              <div className="text-4xl lg:text-5xl font-bold text-cobalt mb-2">
+                {stat.value}
+              </div>
+              <p className="text-muted-foreground font-medium">
+                {stat.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        
+        {/* Tabela Comparativa */}
+        <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.7s' }}>
+          <h3 className="text-2xl lg:text-3xl font-bold text-center text-foreground mb-8">
+            AXON vs. Atendimento Tradicional
           </h3>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-card border rounded-2xl p-6 shadow-elegant hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                
-                <div className="relative">
-                  <Quote className="w-8 h-8 text-cobalt/20 absolute -top-2 -left-2" />
-                  <p className="text-muted-foreground leading-relaxed mb-6 pl-6">
-                    {testimonial.text}
-                  </p>
-                </div>
-                
-                <div className="border-t pt-4">
-                  <p className="font-semibold text-foreground">
-                    {testimonial.author}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.clinic}
-                  </p>
-                </div>
-              </div>
-            ))}
+          <div className="border rounded-2xl overflow-hidden shadow-lg">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="w-1/3 text-base">Funcionalidade</TableHead>
+                  <TableHead className="text-center text-base bg-cobalt/5 text-cobalt">Agente IA AXON</TableHead>
+                  <TableHead className="text-center text-base">Atendimento Tradicional</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="font-medium">Disponibilidade</TableCell>
+                  <TableCell className="text-center bg-cobalt/5">
+                    <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
+                    <span className="sr-only">Sim</span>
+                  </TableCell>
+                  <TableCell className="text-center">
+                    <XCircle className="w-5 h-5 text-destructive mx-auto" />
+                    <span className="sr-only">Não</span>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Atendimento 24/7</TableCell>
+                  <TableCell className="text-center bg-cobalt/5">
+                    <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
+                  </TableCell>
+                  <TableCell className="text-center">
+                    <XCircle className="w-5 h-5 text-destructive mx-auto" />
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Respostas Instantâneas</TableCell>
+                  <TableCell className="text-center bg-cobalt/5">
+                    <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
+                  </TableCell>
+                  <TableCell className="text-center">
+                    <XCircle className="w-5 h-5 text-destructive mx-auto" />
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Agendamento sem intervenção humana</TableCell>
+                  <TableCell className="text-center bg-cobalt/5">
+                    <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
+                  </TableCell>
+                  <TableCell className="text-center">
+                    <XCircle className="w-5 h-5 text-destructive mx-auto" />
+                  </TableCell>
+                </TableRow>
+                 <TableRow>
+                  <TableCell className="font-medium">Custo Escalável</TableCell>
+                  <TableCell className="text-center bg-cobalt/5">
+                    <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
+                  </TableCell>
+                  <TableCell className="text-center">
+                    <XCircle className="w-5 h-5 text-destructive mx-auto" />
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </div>
         </div>
-        
-        <div className="text-center mt-12">
-          <Button variant="cobalt" size="lg" className="text-lg px-8 py-4">
-            Quero ver o agente IA funcionando!
+
+        <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.9s' }}>
+          <Button variant="cobalt" size="lg" className="text-base">
+            Quero ter estes resultados na minha clínica
           </Button>
         </div>
       </div>

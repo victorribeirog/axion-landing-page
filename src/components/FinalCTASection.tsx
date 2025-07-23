@@ -1,72 +1,59 @@
 import { Button } from "@/components/ui/button";
-import { Shield, TrendingUp, RefreshCw, Phone } from "lucide-react";
+import { ShieldCheck, TrendingUp, Sparkles, PhoneCall } from "lucide-react";
 
 const FinalCTASection = () => {
   const guarantees = [
     {
-      icon: Shield,
-      title: "Privacidade dos Dados",
-      description: "Seus dados e dos pacientes ficam 100% seguros e protegidos"
+      icon: ShieldCheck,
+      title: "Privacidade e Segurança",
+      description: "Dados dos pacientes 100% seguros e em conformidade com as normas."
     },
     {
       icon: TrendingUp,
       title: "Melhoria Contínua",
-      description: "O agente IA evolui constantemente para atender melhor sua clínica"
+      description: "O seu agente evolui constantemente para otimizar a performance."
     },
     {
-      icon: RefreshCw,
-      title: "Cancelamento Sem Burocracia",
-      description: "Se não ficar satisfeito, pode cancelar quando quiser, sem complicações"
+      icon: Sparkles,
+      title: "Suporte Dedicado",
+      description: "A nossa equipa acompanha todo o processo de implementação e ajuste."
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary to-primary/90 text-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-8">
-            Garantia Total: Seu Agente IA Vai 
-            <span className="block mt-2 text-cobalt-foreground">
-              Revolucionar Seu Atendimento!
-            </span>
+    <section className="py-20 bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 text-center">
+        
+        <div className="max-w-3xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            Está Pronto para Revolucionar o Atendimento da Sua Clínica?
           </h2>
-          
-          <p className="text-xl text-white/90 leading-relaxed mb-12">
-            Não deixe sua clínica ficar para trás. Seus concorrentes já estão usando tecnologia IA 
-            para conquistar mais pacientes. É hora de você também ter essa vantagem!
+          <p className="text-lg text-primary-foreground/80">
+            Não perca mais pacientes por falta de agilidade. Dê o próximo passo e veja na prática como a AXON pode impulsionar os seus resultados.
           </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {guarantees.map((guarantee, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
-              <div className="w-16 h-16 bg-cobalt/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <guarantee.icon className="w-8 h-8 text-white" />
+            <div 
+              key={index} 
+              className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-2xl p-6 animate-fade-in"
+              style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+            >
+              <div className="w-12 h-12 bg-cobalt/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <guarantee.icon className="w-6 h-6 text-cobalt" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">
-                🔒 {guarantee.title}
+              <h3 className="text-lg font-semibold mb-2">
+                {guarantee.title}
               </h3>
-              <p className="text-white/80 leading-relaxed">
+              <p className="text-primary-foreground/70">
                 {guarantee.description}
               </p>
             </div>
           ))}
         </div>
         
-        <div className="text-center space-y-8">
-          <div className="bg-white/5 border border-white/20 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">
-              ⚡ Oferta Por Tempo Limitado
-            </h3>
-            <p className="text-white/90 text-lg mb-6">
-              Seja uma das primeiras 50 clínicas a implementar nosso agente IA e garanta condições especiais.
-            </p>
-            <div className="flex items-center justify-center gap-2 text-sm text-white/70">
-              <Phone className="w-4 h-4" />
-              <span>Suporte dedicado durante toda implementação</span>
-            </div>
-          </div>
-          
+        <div className="animate-fade-in" style={{ animationDelay: '0.7s' }}>
           <Button 
             variant="cobalt-pulse" 
             size="lg" 
@@ -75,10 +62,11 @@ const FinalCTASection = () => {
             🚀 Comece Agora - Transforme Sua Clínica!
           </Button>
           
-          <p className="text-white/70 text-sm">
-            Clique no botão acima e receba uma análise gratuita do potencial de automação da sua clínica
+          <p className="text-primary-foreground/60 text-sm mt-4">
+            Clique e descubra o potencial de automação da sua clínica.
           </p>
         </div>
+
       </div>
     </section>
   );

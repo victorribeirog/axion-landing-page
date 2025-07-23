@@ -4,74 +4,61 @@ import aiChatDemo from "@/assets/ai-chat-demo.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-cobalt to-cobalt-dark text-white">
-      <div className="container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Texto Principal */}
-          <div className="space-y-8">
-            <div className="flex items-center gap-2 text-cobalt-foreground/80">
-              <Bot className="w-6 h-6" />
-              <span className="text-sm font-medium uppercase tracking-wider">
-                Tecnologia IA Avançada
-              </span>
+    // Fundo escuro (usando a cor primária) com um gradiente radial sutil para dar profundidade
+    <section className="relative w-full min-h-screen bg-primary text-primary-foreground overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(45,55,72,0.5)_0%,_rgba(26,32,44,0)_60%)]" 
+        aria-hidden="true"
+      />
+      
+      <div className="container relative z-10 mx-auto px-4 py-20 flex items-center min-h-screen">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          
+          {/* Coluna de Texto (Esquerda) */}
+          <div className="text-center lg:text-left space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium bg-primary-foreground/10 border border-primary-foreground/20 rounded-full">
+              <Bot className="w-4 h-4 text-cobalt" />
+              <span>Tecnologia de IA para Clínicas</span>
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="block">🤖 Agente IA</span>
-              <span className="block text-white/90">Personalizado</span>
-              <span className="block">para Clínicas</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+              O Agente IA <span className="text-cobalt">Personalizado</span> que sua Clínica Precisa
             </h1>
             
-            <div className="flex flex-wrap gap-4 text-lg">
-              <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5" />
-                <span>Atendimento 24h</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                <span>Agendamento Automático</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MessageSquare className="w-5 h-5" />
-                <span>Respostas Inteligentes</span>
-              </div>
-            </div>
-            
-            <p className="text-xl text-white/90 leading-relaxed">
-              📌 Criamos e treinamos um agente IA sob medida para sua clínica, 
-              adaptado à sua realidade e ao seu fluxo de atendimento.
+            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-xl mx-auto lg:mx-0">
+              Transforme seu atendimento com um assistente virtual treinado exclusivamente para suas necessidades. Respostas instantâneas, agendamentos automáticos e pacientes mais satisfeitos.
             </p>
             
-            <div className="space-y-4">
-              <Button size="lg" variant="cobalt-pulse" className="text-lg px-8 py-4">
-                Quero um agente IA para minha clínica!
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+              <Button size="lg" variant="cobalt" className="text-base w-full sm:w-auto">
+                Quero um agente para minha clínica!
               </Button>
-              
-              <div className="flex items-center gap-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
+              <div className="flex items-center gap-2">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
                 </div>
-                <span className="text-white/80">+150 Clínicas Atendidas</span>
+                <span className="text-sm text-primary-foreground/70">+150 Clínicas Atendidas</span>
               </div>
             </div>
           </div>
           
-          {/* Demonstração Visual */}
-          <div className="relative">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          {/* Coluna Visual (Direita) */}
+          <div className="relative animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            {/* Efeito de brilho atrás da imagem */}
+            <div className="absolute -inset-4 bg-cobalt/20 rounded-full blur-3xl opacity-50" />
+            
+            <div className="relative bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/10 shadow-2xl shadow-black/20">
               <img 
                 src={aiChatDemo} 
-                alt="Demonstração do Agente IA atendendo pacientes no WhatsApp"
-                className="w-full rounded-xl shadow-2xl"
+                alt="Demonstração do Agente IA no WhatsApp"
+                className="w-full h-auto rounded-lg"
               />
-              <div className="mt-6 text-center">
-                <p className="text-white/90 font-medium">
-                  Demonstração do Agente IA em ação
+              <div className="mt-4 text-center">
+                <p className="font-medium text-primary-foreground/90">
+                  Agente em Ação no WhatsApp
                 </p>
-                <p className="text-white/70 text-sm mt-2">
-                  Atendendo pacientes e agendando consultas automaticamente
+                <p className="text-sm text-primary-foreground/70">
+                  Agendando e respondendo 24h por dia.
                 </p>
               </div>
             </div>
