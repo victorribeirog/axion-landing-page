@@ -1,21 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Bot, Clock, Calendar, MessageSquare, Star } from "lucide-react";
 import WhatsAppInterface from "./WhatsAppInterface";
-
 const HeroSection = () => {
   return (
     // Fundo escuro (usando a cor primária) com um gradiente radial sutil para dar profundidade
     <section className="relative w-full min-h-screen bg-primary text-primary-foreground overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(45,55,72,0.5)_0%,_rgba(26,32,44,0)_60%)]" 
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(45,55,72,0.5)_0%,_rgba(26,32,44,0)_60%)]" aria-hidden="true" />
       
       <div className="container relative z-10 mx-auto px-4 py-20 flex items-center min-h-screen">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* Coluna de Texto (Esquerda) */}
-          <div className="text-center lg:text-left space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="text-center lg:text-left space-y-6 animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium bg-primary-foreground/10 border border-primary-foreground/20 rounded-full">
               <Bot className="w-4 h-4 text-cobalt" />
               <span>Tecnologia de IA para Clínicas</span>
@@ -37,13 +35,15 @@ const HeroSection = () => {
                 <div className="flex text-yellow-400">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
                 </div>
-                <span className="text-sm text-primary-foreground/70">+150 Clínicas Atendidas</span>
+                <span className="text-sm text-primary-foreground/70">+15 Clínicas Atendidas</span>
               </div>
             </div>
           </div>
           
           {/* Coluna Visual (Direita) */}
-          <div className="relative animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="relative animate-fade-in" style={{
+            animationDelay: '0.4s'
+          }}>
             {/* Efeito de brilho atrás da imagem */}
             <div className="absolute -inset-4 bg-cobalt/20 rounded-full blur-3xl opacity-50" />
             
@@ -64,5 +64,4 @@ const HeroSection = () => {
     </section>
   );
 };
-
 export default HeroSection;
