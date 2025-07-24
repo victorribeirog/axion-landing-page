@@ -18,7 +18,7 @@ const SolutionSection = () => {
     },
     {
       icon: ArrowRightCircle,
-      text: "Encaminhamento inteligente para a equipa humana"
+      text: "Encaminhamento inteligente para a equipe humana"
     },
     {
       icon: Bot,

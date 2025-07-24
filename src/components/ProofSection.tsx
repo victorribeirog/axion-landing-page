@@ -64,14 +64,14 @@ const ProofSection = () => {
         {/* Tabela Comparativa */}
         <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.7s' }}>
           <h3 className="text-2xl lg:text-3xl font-bold text-center text-foreground mb-8">
-            AXON vs. Atendimento Tradicional
+            Agente IA vs. Atendimento Tradicional
           </h3>
           <div className="border rounded-2xl overflow-hidden shadow-lg">
             <Table>
               <TableHeader>
                 <TableRow>
                   <TableHead className="w-1/3 text-base">Funcionalidade</TableHead>
-                  <TableHead className="text-center text-base bg-cobalt/5 text-cobalt">Agente IA AXON</TableHead>
+                  <TableHead className="text-center text-base bg-cobalt/5 text-cobalt">Agente IA</TableHead>
                   <TableHead className="text-center text-base">Atendimento Tradicional</TableHead>
                 </TableRow>
               </TableHeader>
