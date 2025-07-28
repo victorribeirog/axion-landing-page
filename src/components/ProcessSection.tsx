@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Search, BrainCircuit, Zap, ArrowUpCircle } from "lucide-react";
+import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
 
 const ProcessSection = () => {
   const steps = [
@@ -67,7 +68,12 @@ const ProcessSection = () => {
         </div>
         
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          <Button variant="cobalt" size="lg" className="text-base">
+          <Button 
+            variant="cobalt" 
+            size="lg" 
+            className="text-base"
+            onClick={() => openWhatsApp(whatsappMessages.process)}
+          >
             Quero um agente IA do meu jeito!
           </Button>
         </div>

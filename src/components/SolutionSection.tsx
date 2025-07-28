@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Bot, Clock, Calendar, MessageSquare, ArrowRightCircle } from "lucide-react";
 import aiSolution from "@/assets/ai-solution.jpg"; // A imagem do cérebro IA
+import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
 
 const SolutionSection = () => {
   const benefits = [
@@ -56,7 +57,12 @@ const SolutionSection = () => {
               </div>
             ))}
             <div className="pt-6">
-              <Button variant="cobalt" size="lg" className="text-base w-full sm:w-auto">
+              <Button 
+                variant="cobalt" 
+                size="lg" 
+                className="text-base w-full sm:w-auto"
+                onClick={() => openWhatsApp(whatsappMessages.solution)}
+              >
                 Quero o meu agente personalizado!
               </Button>
             </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, TrendingUp, Sparkles, PhoneCall } from "lucide-react";
+import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
 
 const FinalCTASection = () => {
   const guarantees = [
@@ -58,6 +59,7 @@ const FinalCTASection = () => {
             variant="cobalt-pulse" 
             size="lg" 
             className="text-xl px-12 py-6 bg-white text-primary hover:bg-white/90 transform hover:scale-110 shadow-2xl"
+            onClick={() => openWhatsApp(whatsappMessages.finalCta)}
           >
             🚀 Comece Agora - Transforme Sua Clínica!
           </Button>

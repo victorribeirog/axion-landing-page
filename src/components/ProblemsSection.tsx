@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { PhoneOff, UserX, Clock4 } from "lucide-react";
 import clinicProblems from "@/assets/clinic-problems.jpg";
+import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
 
 const ProblemsSection = () => {
   const problems = [
@@ -67,7 +68,12 @@ const ProblemsSection = () => {
             </div>
             
             <div className="pt-4 text-center lg:text-left">
-              <Button variant="cobalt-outline" size="lg" className="text-base">
+              <Button 
+                variant="cobalt-outline" 
+                size="lg" 
+                className="text-base"
+                onClick={() => openWhatsApp(whatsappMessages.problems)}
+              >
                 Quero resolver estes problemas
               </Button>
             </div>

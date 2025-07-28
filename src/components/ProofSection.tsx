@@ -8,6 +8,7 @@ import {
   TableHeader, 
   TableRow 
 } from "@/components/ui/table";
+import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
 
 const ProofSection = () => {
   const statistics = [
@@ -129,7 +130,12 @@ const ProofSection = () => {
         </div>
 
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.9s' }}>
-          <Button variant="cobalt" size="lg" className="text-base">
+          <Button 
+            variant="cobalt" 
+            size="lg" 
+            className="text-base"
+            onClick={() => openWhatsApp(whatsappMessages.proof)}
+          >
             Quero ter estes resultados na minha clínica
           </Button>
         </div>

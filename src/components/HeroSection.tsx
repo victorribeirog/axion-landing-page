@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Bot, Clock, Calendar, MessageSquare, Star } from "lucide-react";
 import WhatsAppInterface from "./WhatsAppInterface";
+import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
 const HeroSection = () => {
   return (
     // Fundo escuro (usando a cor primária) com um gradiente radial sutil para dar profundidade
@@ -28,7 +29,12 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-              <Button size="lg" variant="cobalt" className="text-base w-full sm:w-auto">
+              <Button 
+                size="lg" 
+                variant="cobalt" 
+                className="text-base w-full sm:w-auto"
+                onClick={() => openWhatsApp(whatsappMessages.hero)}
+              >
                 Quero um agente para minha clínica!
               </Button>
               <div className="flex items-center gap-2">
