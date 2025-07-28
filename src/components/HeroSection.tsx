@@ -9,18 +9,18 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(45,55,72,0.5)_0%,_rgba(26,32,44,0)_60%)]" aria-hidden="true" />
       
       <div className="container relative z-10 mx-auto px-4 py-20 flex items-center min-h-screen">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center w-full">
-            
-            {/* Coluna de Texto (Esquerda) */}
-            <div className="text-center lg:text-left space-y-6 animate-fade-in order-2 lg:order-1" style={{
-              animationDelay: '0.2s'
-            }}>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          
+          {/* Coluna de Texto (Esquerda) */}
+          <div className="text-center lg:text-left space-y-6 animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium bg-primary-foreground/10 border border-primary-foreground/20 rounded-full">
               <Bot className="w-4 h-4 text-cobalt" />
               <span>Tecnologia de IA para Clínicas</span>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               O Agente IA <span className="text-cobalt">Personalizado</span> que sua Clínica Precisa
             </h1>
             
@@ -32,7 +32,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="cobalt" 
-                className="text-sm sm:text-base w-full sm:w-auto px-4 sm:px-8"
+                className="text-base w-full sm:w-auto"
                 onClick={() => openWhatsApp(whatsappMessages.hero)}
               >
                 Quero um agente para minha clínica!
@@ -47,7 +47,7 @@ const HeroSection = () => {
           </div>
           
           {/* Coluna Visual (Direita) */}
-          <div className="relative animate-fade-in order-1 lg:order-2 w-full max-w-sm mx-auto lg:max-w-none" style={{
+          <div className="relative animate-fade-in" style={{
             animationDelay: '0.4s'
           }}>
             {/* Efeito de brilho atrás da imagem */}
