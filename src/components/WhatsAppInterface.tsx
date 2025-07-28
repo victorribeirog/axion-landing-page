@@ -70,7 +70,7 @@ const WhatsAppInterface = () => {
   };
 
   return (
-    <div className="max-w-sm mx-auto bg-white rounded-lg shadow-2xl overflow-hidden">
+    <div className="w-full max-w-sm mx-auto bg-white rounded-lg shadow-2xl overflow-hidden">
       {/* WhatsApp Header */}
       <div className="bg-[#075E54] text-white p-4 flex items-center gap-3">
         <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
@@ -83,7 +83,7 @@ const WhatsAppInterface = () => {
       </div>
 
       {/* Messages Container */}
-      <div className="h-96 bg-[#ECE5DD] p-4 overflow-y-auto">
+      <div className="h-72 sm:h-96 bg-[#ECE5DD] p-3 sm:p-4 overflow-y-auto">
         <div className="space-y-3">
           {messages.slice(0, visibleMessages).map((message, index) => (
             <div
@@ -92,13 +92,13 @@ const WhatsAppInterface = () => {
               style={{ animationDelay: `${index * 0.5}s` }}
             >
               <div
-                className={`max-w-[80%] rounded-lg p-3 shadow-sm ${
+                className={`max-w-[85%] sm:max-w-[80%] rounded-lg p-2 sm:p-3 shadow-sm ${
                   message.sender === 'patient'
                     ? 'bg-[#DCF8C6] text-gray-800'
                     : 'bg-white text-gray-800'
                 }`}
               >
-                <p className="text-sm whitespace-pre-line">{message.text}</p>
+                <p className="text-xs sm:text-sm whitespace-pre-line">{message.text}</p>
                 <div className="flex items-center justify-end gap-1 mt-1">
                   <span className="text-xs text-gray-500">{message.time}</span>
                   {message.sender === 'ai' && (
