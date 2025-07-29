@@ -53,12 +53,7 @@ const ProcessSection = () => {
                 key={index} 
                 className="relative bg-card border rounded-2xl p-6 text-left shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-fade-in group"
                 style={{ animationDelay: `${0.3 + index * 0.1}s` }}
-              >
-                {/* Número do Step - Circulo destacado */}
-                <div className="absolute -top-4 left-6 w-8 h-8 bg-cobalt text-cobalt-foreground rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
-                  {index + 1}
-                </div>
-                
+              > 
                 {/* Conectores entre steps */}
                 {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-12 -right-4 w-8 h-0.5 bg-cobalt/30" />

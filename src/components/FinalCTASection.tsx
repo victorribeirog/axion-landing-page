@@ -70,7 +70,7 @@ const FinalCTASection = () => {
           </p>
           
           <div className="flex items-center justify-center gap-2 mt-6 opacity-70">
-            <img src={axonLogo} alt="AXON" className="h-5 w-auto" />
+            <img src={axonLogo} alt="AXON" className="h-10 w-auto" />
             <span className="text-sm text-primary-foreground/60">Uma solução AXON</span>
           </div>
         </div>

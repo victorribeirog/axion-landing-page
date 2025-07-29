@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-4">
           <div className="flex items-center space-x-3">
-            <img src={axonLogo} alt="AXON" className="h-6 w-auto" />
+            <img src={axonLogo} alt="AXON" className="h-12 w-auto" />
             <span className="text-sm font-medium text-foreground">AXON</span>
           </div>
           <p className="text-sm text-muted-foreground text-center">© 2025 AXON - Soluções em IA</p>

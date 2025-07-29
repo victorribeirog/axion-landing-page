@@ -9,11 +9,11 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Quanto tempo demora para implementar o agente IA?",
-      answer: "O processo completo leva entre 7 a 14 dias úteis, desde a análise inicial até a ativação completa. Durante este período, configuramos, treinamos e testamos o agente para garantir que funcione perfeitamente com o fluxo da sua clínica."
+      answer: "O processo completo leva entre 30 a 45 dias úteis, desde a análise inicial até a ativação completa. Durante este período, configuramos, treinamos e testamos o agente para garantir que funcione perfeitamente com o fluxo da sua clínica."
     },
     {
       question: "O agente substitui completamente a recepção humana?",
-      answer: "Não, o agente IA trabalha como um complemento à sua equipe. Ele atende consultas básicas, agenda consultas e filtra chamadas, permitindo que sua recepção foque em atendimentos mais complexos e pessoais. Casos especiais sempre podem ser transferidos para um atendente humano."
+      answer: "Não, o agente IA trabalha como um complemento à sua equipe. Ele fornece informações e dados da clínica, agenda, remarca e desmarca consultas, envia lembretes, permitindo que sua recepção foque em atendimentos mais complexos e pessoais. Casos especiais sempre podem ser transferidos para um atendente humano."
     },
     {
       question: "Como o agente aprende sobre a minha clínica?",

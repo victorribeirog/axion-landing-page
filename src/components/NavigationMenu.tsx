@@ -46,7 +46,7 @@ const NavigationMenu = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src={axonLogo} alt="AXON" className="h-8 w-auto" />
+            <img src={axonLogo} alt="AXON" className="h-14 w-auto" />
             <span className="text-lg font-semibold text-foreground">AXON</span>
           </div>
 
