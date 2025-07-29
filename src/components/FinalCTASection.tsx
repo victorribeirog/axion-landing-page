@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, TrendingUp, Sparkles, PhoneCall } from "lucide-react";
 import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
+import axonLogo from "@/assets/axon-logo.png";
 
 const FinalCTASection = () => {
   const guarantees = [
@@ -67,6 +68,11 @@ const FinalCTASection = () => {
           <p className="text-primary-foreground/60 text-sm mt-4">
             Clique e descubra o potencial de automação da sua clínica.
           </p>
+          
+          <div className="flex items-center justify-center gap-2 mt-6 opacity-70">
+            <img src={axonLogo} alt="AXON" className="h-5 w-auto" />
+            <span className="text-sm text-primary-foreground/60">Uma solução AXON</span>
+          </div>
         </div>
 
       </div>

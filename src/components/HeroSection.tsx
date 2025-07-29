@@ -17,7 +17,7 @@ const HeroSection = () => {
           }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium bg-primary-foreground/10 border border-primary-foreground/20 rounded-full">
               <Bot className="w-4 h-4 text-cobalt" />
-              <span>Tecnologia de IA para Clínicas</span>
+              <span>Powered by AXON - Tecnologia de IA para Clínicas</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
