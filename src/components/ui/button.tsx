@@ -18,7 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cobalt: "bg-cobalt text-cobalt-foreground hover:bg-cobalt-dark transform hover:scale-105 shadow-lg hover:shadow-xl",
+        cobalt: "bg-cobalt text-cobalt-foreground hover:bg-cobalt-dark transform hover:scale-105 shadow-lg hover:shadow-xl transition-all duration-300",
         "cobalt-outline": "border-2 border-cobalt text-cobalt bg-transparent hover:bg-cobalt hover:text-cobalt-foreground",
         "cobalt-pulse": "bg-cobalt text-cobalt-foreground hover:bg-cobalt-dark animate-pulse shadow-lg hover:shadow-xl transform hover:scale-105",
       },
