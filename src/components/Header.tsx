@@ -8,7 +8,7 @@ const Header = () => {
           <img 
             src={axonLogo} 
             alt="AXON" 
-            className="h-8 w-auto"
+            className="h-12 w-auto"
           />
           <span className="ml-2 text-lg font-semibold text-foreground">AXON</span>
         </div>
