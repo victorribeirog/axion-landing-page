@@ -29,7 +29,7 @@ const SolutionSection = () => {
 
   return (
     // Fundo primário escuro para criar um ambiente tecnológico e focado.
-    <section className="py-20 bg-primary text-primary-foreground">
+    <section className="py-20 bg-primary text-primary-foreground overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">

@@ -23,7 +23,7 @@ const FinalCTASection = () => {
   ];
 
   return (
-    <section className="py-20 bg-primary text-primary-foreground">
+    <section className="py-20 bg-primary text-primary-foreground overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         
         <div className="max-w-3xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -57,9 +57,9 @@ const FinalCTASection = () => {
         
         <div className="animate-fade-in" style={{ animationDelay: '0.7s' }}>
           <Button 
-            variant="cobalt-pulse" 
+            variant="cobalt" 
             size="lg" 
-            className="text-xl px-12 py-6 bg-white text-primary hover:bg-white/90 transform hover:scale-110 shadow-2xl"
+            className="text-lg sm:text-xl font-bold  px-12 py-6 bg-white text-primary hover:bg-white/90 animate-pulse shadow-lg shadow-cobalt/10 transform hover:scale-105"
             onClick={() => openWhatsApp(whatsappMessages.finalCta)}
           >
             🚀 Comece Agora - Transforme Sua Clínica!
@@ -70,8 +70,6 @@ const FinalCTASection = () => {
           </p>
           
           <div className="flex items-center justify-center gap-2 mt-6 opacity-70">
-            <img src={axonLogo} alt="AXON" className="h-10 w-auto" />
-            <span className="text-sm text-primary-foreground/60">Uma solução AXON</span>
           </div>
         </div>
 

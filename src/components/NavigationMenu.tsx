@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import axonLogo from "@/assets/axon-logo.png";
+import axonpreto from "@/assets/axon-preto.png";
 
 const NavigationMenu = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,15 +39,14 @@ const NavigationMenu = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-background/95 backdrop-blur-sm border-b border-border shadow-lg' 
+        ? 'bg-secondary/95 backdrop-blur-sm border-b border-border shadow-lg' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src={axonLogo} alt="AXON" className="h-14 w-auto" />
-            <span className="text-lg font-semibold text-foreground">AXON</span>
+            <img src={axonpreto} alt="AXON" className="h-28 w-auto" />
           </div>
 
           {/* Desktop Menu */}
@@ -56,7 +55,7 @@ const NavigationMenu = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-muted-foreground hover:text-cobalt transition-colors relative group"
+                className="text-sm font-medium text-black hover:text-cobalt transition-colors relative group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cobalt transition-all duration-300 group-hover:w-full" />
