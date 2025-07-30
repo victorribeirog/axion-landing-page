@@ -59,7 +59,7 @@ const FinalCTASection = () => {
           <Button 
             variant="cobalt-pulse" 
             size="lg" 
-            className="text-xl px-12 py-6 bg-white text-primary hover:bg-white/90 transform hover:scale-110 shadow-2xl"
+            className="text-xl px-12 py-6 bg-white text-primary hover:bg-white/90 transform hover:scale-110 shadow-2xl overflow-hidden"
             onClick={() => openWhatsApp(whatsappMessages.finalCta)}
           >
             🚀 Comece Agora - Transforme Sua Clínica!

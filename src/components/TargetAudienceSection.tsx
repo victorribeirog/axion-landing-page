@@ -189,7 +189,7 @@ const TargetAudienceSection = () => {
             <Button 
               variant="cobalt" 
               size="lg" 
-              className="text-base glow-effect"
+              className="text-base glow-effect overflow-hidden"
               onClick={() => openWhatsApp(whatsappMessages.targetAudience)}
             >
               Verificar Meu Perfil Gratuitamente →

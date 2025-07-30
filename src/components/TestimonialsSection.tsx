@@ -147,7 +147,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: '0.9s' }}>
+        <div className="text-center animate-fade-in overflow-hidden" style={{ animationDelay: '0.9s' }}>
           <Button 
             variant="cobalt" 
             size="lg" 
