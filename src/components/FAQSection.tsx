@@ -8,28 +8,44 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Quanto tempo demora para implementar o agente IA?",
-      answer: "O processo completo leva entre 30 a 45 dias úteis, desde a análise inicial até a ativação completa. Durante este período, configuramos, treinamos e testamos o agente para garantir que funcione perfeitamente com o fluxo da sua clínica."
+      question: "Preciso ter muitos leads para valer a pena?",
+      answer: "Com apenas 20 leads/mês você já vê retorno. Clientes com 50+ leads/mês costumam recuperar o investimento na primeira semana. Nossa IA converte até leads 'mortos' que você já tinha desistido."
     },
     {
-      question: "O agente substitui completamente a recepção humana?",
-      answer: "Não, o agente IA trabalha como um complemento à sua equipe. Ele fornece informações e dados da clínica, agenda, remarca e desmarca consultas, envia lembretes, permitindo que sua recepção foque em atendimentos mais complexos e pessoais. Casos especiais sempre podem ser transferidos para um atendente humano."
+      question: "E se minha clínica for muito específica/diferente?",
+      answer: "Já atendemos desde odontologia geral até harmonização facial. O segredo é o treinamento personalizado: a IA aprende seus protocolos, valores, linguagem e até objeções mais comuns dos seus pacientes."
     },
     {
-      question: "Como o agente aprende sobre a minha clínica?",
-      answer: "Durante a fase de treinamento, fornecemos informações específicas sobre seus serviços, horários, preços, protocolos de atendimento e perguntas frequentes. O agente é personalizado para responder exatamente como sua equipe responderia."
+      question: "O paciente vai perceber que é uma IA?",
+      answer: "A IA conversa naturalmente como sua recepcionista mais experiente. Só revelamos que é IA se o cliente perguntar diretamente. Muitas vezes os pacientes elogiam a 'nova funcionária' pela agilidade!"
     },
     {
-      question: "É seguro? Os dados dos pacientes ficam protegidos?",
-      answer: "Sim, seguimos rigorosamente todas as normas de proteção de dados e LGPD. Todas as conversas são criptografadas, e o agente não armazena informações sensíveis dos pacientes sem autorização expressa."
+      question: "Quanto tempo demora para implementar?",
+      answer: "48 horas úteis. Dia 1: reunião de 1h para entender seu negócio. Dia 2: configuração e treinamento. Dia 3: você está vendendo 24h. Simples assim."
     },
     {
-      question: "Posso modificar as respostas do agente após a implementação?",
-      answer: "Claro! Oferecemos ajustes contínuos e você pode solicitar modificações nas respostas sempre que necessário. Também fornecemos treinamento para sua equipe gerenciar configurações básicas do agente."
+      question: "E se eu não gostar ou não funcionar?",
+      answer: "Garantia incondicional de 30 dias. Se não aumentarmos suas vendas ou você não ficar satisfeito, devolvemos 100% do valor. Sem letras miúdas, sem burocracias."
     },
     {
-      question: "O que acontece se o agente não souber responder algo?",
-      answer: "Quando o agente encontra uma pergunta que não consegue responder adequadamente, ele transfere automaticamente a conversa para um membro da sua equipe ou agenda um retorno conforme suas preferências configuradas."
+      question: "Qual o investimento e como funciona o pagamento?",
+      answer: "Planos a partir de R$ 497/mês (menos que uma recepcionista meio período). Pagamento mensal, sem fidelidade. Primeiro mês gratuito se batermos a meta de conversão acordada."
+    },
+    {
+      question: "Substitui minha equipe ou complementa?",
+      answer: "Complementa! A IA cuida dos primeiros contatos, qualifica leads e agenda consultas. Sua equipe fica livre para o que realmente gera valor: atender pacientes e focar na experiência clínica."
+    },
+    {
+      question: "Funciona com qualquer sistema de agendamento?",
+      answer: "Sim! Integramos com Google Agenda, Doctoralia, MedPlus, Clinicorp e +15 sistemas. Se usa planilha Excel, também funciona. A IA se adapta ao seu jeito de trabalhar."
+    },
+    {
+      question: "E se o lead fizer pergunta muito técnica?",
+      answer: "A IA foi treinada para reconhecer seus limites. Quando precisa, ela transfere naturalmente: 'Vou chamar nossa especialista para te dar uma resposta mais precisa'. Zero constrangimento."
+    },
+    {
+      question: "Consigo acompanhar os resultados?",
+      answer: "Relatório semanal com número de conversas, conversões, agendamentos e faturamento gerado. Você vê exatamente o ROI da IA e pode otimizar constantemente."
     }
   ];
 
@@ -38,10 +54,10 @@ const FAQSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Perguntas Frequentes
+            Ainda tem <span className="text-cobalt">Dúvidas</span>?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Esclarecemos as principais dúvidas sobre nossos agentes IA para clínicas
+            Respondemos as principais objeções e preocupações de clínicas como a sua
           </p>
         </div>
 

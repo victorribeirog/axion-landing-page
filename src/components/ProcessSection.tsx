@@ -7,26 +7,20 @@ const ProcessSection = () => {
     {
       number: "01",
       icon: Search,
-      title: "Análise e Diagnóstico",
-      description: "Mapeamos detalhadamente as necessidades e o fluxo de atendimento da sua clínica para definir os objetivos do agente IA."
+      title: "Lead Chega no WhatsApp",
+      description: "Cliente envia mensagem para sua clínica interessado em algum procedimento ou consulta."
     },
     {
-      number: "02",
+      number: "02", 
       icon: BrainCircuit,
-      title: "Treinamento Personalizado",
-      description: "O agente é treinado com as informações específicas da sua clínica, aprendendo a responder como um membro da sua equipa faria."
+      title: "IA Responde Instantaneamente",
+      description: "Agente entende a necessidade, faz perguntas inteligentes e conduz a conversa como um vendedor experiente."
     },
     {
       number: "03",
       icon: Zap,
-      title: "Integração e Ativação",
-      description: "Integramos o agente diretamente ao seu WhatsApp. Ele começa a atender pacientes de forma automática e instantânea."
-    },
-    {
-      number: "04",
-      icon: ArrowUpCircle,
-      title: "Otimização Contínua",
-      description: "Acompanhamos o desempenho e realizamos ajustes constantes para garantir que o agente evolua e melhore continuamente."
+      title: "Venda ou Agendamento",
+      description: "IA finaliza venda diretamente ou agenda consulta na sua agenda. Cliente sai satisfeito e você fatura mais."
     }
   ];
 
@@ -35,10 +29,10 @@ const ProcessSection = () => {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Um Processo Transparente, do Início ao Fim
+            Como Funciona na <span className="text-cobalt">Prática</span>?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Criamos e treinamos o seu agente IA numa metodologia de 4 passos, garantindo uma solução perfeitamente adaptada à sua clínica.
+            Simples assim: Lead chega → IA vende → Você fatura. Veja como cada conversa se transforma em receita para sua clínica.
           </p>
         </div>
         
@@ -47,16 +41,18 @@ const ProcessSection = () => {
           {/* Linha conectora para desktop */}
           <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-cobalt/30 to-transparent" />
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+          <div className="grid lg:grid-cols-3 gap-8 relative">
             {steps.map((step, index) => (
               <div 
                 key={index} 
                 className="relative bg-card border rounded-2xl p-6 text-left shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-fade-in group"
                 style={{ animationDelay: `${0.3 + index * 0.1}s` }}
               > 
-                {/* Conectores entre steps */}
+                {/* Conectores entre steps com seta */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-12 -right-4 w-8 h-0.5 bg-cobalt/30" />
+                  <div className="hidden lg:block absolute top-12 -right-4 w-8 h-0.5 bg-cobalt/30">
+                    <div className="absolute -right-1 -top-1 w-2 h-2 bg-cobalt/50 rotate-45" />
+                  </div>
                 )}
                 
                 <div className="pt-4">
@@ -83,11 +79,14 @@ const ProcessSection = () => {
           <Button 
             variant="cobalt" 
             size="lg" 
-            className="text-base"
+            className="text-base glow-effect"
             onClick={() => openWhatsApp(whatsappMessages.process)}
           >
-            Quero um agente IA do meu jeito!
+            Implementar na Minha Clínica Agora →
           </Button>
+          <p className="text-sm text-muted-foreground mt-3">
+            <span className="text-cobalt font-medium">Funcionando em 48h</span> ou menos
+          </p>
         </div>
       </div>
     </section>
