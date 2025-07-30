@@ -9,7 +9,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Preciso ter muitos leads para valer a pena?",
-      answer: "Com apenas 20 leads/mês você já vê retorno. Clientes com 50+ leads/mês costumam recuperar o investimento na primeira semana. Nossa IA converte até leads 'mortos' que você já tinha desistido."
+      answer: "Com apenas 20 leads/mês você já vê retorno. Clientes com 50+ leads/mês costumam recuperar o investimento nos primeiros meses."
     },
     {
       question: "E se minha clínica for muito específica/diferente?",
@@ -21,32 +21,16 @@ const FAQSection = () => {
     },
     {
       question: "Quanto tempo demora para implementar?",
-      answer: "48 horas úteis. Dia 1: reunião de 1h para entender seu negócio. Dia 2: configuração e treinamento. Dia 3: você está vendendo 24h. Simples assim."
-    },
-    {
-      question: "E se eu não gostar ou não funcionar?",
-      answer: "Garantia incondicional de 30 dias. Se não aumentarmos suas vendas ou você não ficar satisfeito, devolvemos 100% do valor. Sem letras miúdas, sem burocracias."
-    },
-    {
-      question: "Qual o investimento e como funciona o pagamento?",
-      answer: "Planos a partir de R$ 497/mês (menos que uma recepcionista meio período). Pagamento mensal, sem fidelidade. Primeiro mês gratuito se batermos a meta de conversão acordada."
+      answer: "Entregamos o agente treinado e implementado no contexto da sua clínica em até 45 dias após o fechamento do contrato. Você já começa a ver resultados no primeiro dia."
     },
     {
       question: "Substitui minha equipe ou complementa?",
       answer: "Complementa! A IA cuida dos primeiros contatos, qualifica leads e agenda consultas. Sua equipe fica livre para o que realmente gera valor: atender pacientes e focar na experiência clínica."
     },
     {
-      question: "Funciona com qualquer sistema de agendamento?",
-      answer: "Sim! Integramos com Google Agenda, Doctoralia, MedPlus, Clinicorp e +15 sistemas. Se usa planilha Excel, também funciona. A IA se adapta ao seu jeito de trabalhar."
-    },
-    {
       question: "E se o lead fizer pergunta muito técnica?",
       answer: "A IA foi treinada para reconhecer seus limites. Quando precisa, ela transfere naturalmente: 'Vou chamar nossa especialista para te dar uma resposta mais precisa'. Zero constrangimento."
     },
-    {
-      question: "Consigo acompanhar os resultados?",
-      answer: "Relatório semanal com número de conversas, conversões, agendamentos e faturamento gerado. Você vê exatamente o ROI da IA e pode otimizar constantemente."
-    }
   ];
 
   return (

@@ -35,11 +35,8 @@ const HeroSection = () => {
                 className="text-base w-full sm:w-auto glow-effect"
                 onClick={() => openWhatsApp(whatsappMessages.hero)}
               >
-                Análise Gratuita em 24h →
+                Análise Gratuita em 24h
               </Button>
-              <p className="text-sm text-primary-foreground/70 mt-3">
-                <span className="text-cobalt font-medium">Últimas 5 vagas</span> para implementação em janeiro
-              </p>
               <div className="flex items-center gap-2">
                 <div className="flex text-yellow-400">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}

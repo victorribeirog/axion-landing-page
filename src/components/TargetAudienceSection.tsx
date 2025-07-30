@@ -47,7 +47,7 @@ const TargetAudienceSection = () => {
     {
       icon: Users,
       title: "Clínicas com Alto Volume",
-      description: "Recebem 50+ contatos/dia e não conseguem responder todos rapidamente",
+      description: "Recebem 20+ contatos/dia e não conseguem responder todos rapidamente",
       benefit: "Nunca mais perder leads por demora"
     },
     {

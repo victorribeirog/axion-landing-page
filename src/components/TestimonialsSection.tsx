@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Dr. Roberto Silva",
-      role: "Diretor Clínica VitaSaúde",
+      role: "Médico",
       content: "Antes perdíamos 40% dos leads por demora no atendimento. Agora o agente responde na hora e nossa conversão subiu 65%. Incrível!",
       result: "65% + conversão",
       avatar: "🩺",
@@ -15,7 +15,7 @@ const TestimonialsSection = () => {
     },
     {
       name: "Marina Costa",
-      role: "Proprietária Estética Bella",
+      role: "Estética",
       content: "O agente entende perfeitamente nossas especialidades e já agenda consultas direto na agenda. Economizamos 20h/semana de atendimento.",
       result: "20h/semana economizadas",
       avatar: "💅",
@@ -23,8 +23,8 @@ const TestimonialsSection = () => {
     },
     {
       name: "Carlos Mendes",
-      role: "Sócio Odonto Excellence",
-      content: "Implementamos em 2 dias e já no primeiro mês recuperamos o investimento. O melhor: funciona 24h, nunca para de vender.",
+      role: "Dentista",
+      content: "Implementamos e já no primeiro mês recuperamos o investimento. O melhor: funciona 24h, nunca para de vender.",
       result: "ROI em 30 dias",
       avatar: "🦷",
       rating: 5
@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
       { sender: "client", text: "Sim, é o primeiro", time: "14:24" },
       { sender: "ai", text: "Perfeito! Temos um protocolo especial para primeiros implantes. Posso agendar sua avaliação gratuita para amanhã às 14h?", time: "14:24" },
       { sender: "client", text: "Pode sim!", time: "14:25" },
-      { sender: "ai", text: "✅ Agendado! Dr. Silva te aguarda amanhã às 14h. Vou te enviar a localização e preparativos por aqui.", time: "14:25" }
+      { sender: "ai", text: "✅ Agendado! Dr. Carlos te aguarda amanhã às 14h. Vou te enviar a localização e preparativos por aqui.", time: "14:25" }
     ]
   };
 
@@ -156,9 +156,6 @@ const TestimonialsSection = () => {
           >
             Quero Resultados Como Estes →
           </Button>
-          <p className="text-sm text-muted-foreground mt-3">
-            <span className="text-cobalt font-medium">Últimas 5 vagas</span> para implementação em janeiro
-          </p>
         </div>
       </div>
     </section>

@@ -8,35 +8,22 @@ const AboutAxonSection = () => {
     {
       icon: Brain,
       title: "Especialistas em IA",
-      description: "3+ anos desenvolvendo IA especificamente para PMEs brasileiras"
+      description: "Desenvolvemos Agentes IA especificamente para PMEs brasileiras"
     },
     {
       icon: Users,
-      title: "200+ Clínicas Atendidas",
+      title: "15+ Clínicas Atendidas",
       description: "Desde odontologia até estética, dominamos o setor de saúde"
     },
     {
       icon: Award,
-      title: "Certificação Google",
-      description: "Parceiros oficiais em tecnologias de IA e automação"
+      title: "Qualidade Reconhecida",
+      description: "Aumento significativo nas vendas de nossos clientes"
     },
     {
       icon: TrendingUp,
-      title: "R$ 2M+ Gerados",
+      title: "R$ 10k+ Gerados",
       description: "Faturamento adicional criado para nossos clientes"
-    }
-  ];
-
-  const guarantees = [
-    {
-      icon: Shield,
-      title: "Garantia 30 Dias",
-      description: "Se não aumentar suas vendas, devolvemos 100% do investimento"
-    },
-    {
-      icon: Zap,
-      title: "Implementação 48h",
-      description: "Seu agente funcionando e vendendo em menos de 2 dias"
     }
   ];
 
@@ -60,8 +47,8 @@ const AboutAxonSection = () => {
               A História que Nos Motivou
             </h3>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Tudo começou quando nosso sócio, dono de uma clínica odontológica, estava perdendo <strong className="text-cobalt">40% dos leads</strong> 
-              por não conseguir responder WhatsApp rapidamente. Criamos nossa primeira IA para resolver esse problema específico. 
+              Tudo começou quando notamos um padrão nos atendimentos via WhatsApp realizados pelas clínicas, a maioria perdia <strong className="text-cobalt">40% dos leads </strong> 
+              por não conseguir responder rapidamente. Criamos nossa primeira IA para resolver esse problema específico. 
               <br /><br />
               Resultado: <strong className="text-cobalt">+85% de conversão em 30 dias</strong>. Percebemos que milhares de clínicas 
               enfrentavam o mesmo problema. Nasceu a AXON.
@@ -98,27 +85,6 @@ const AboutAxonSection = () => {
             independente do tamanho, possa ter um atendimento de excelência 24h por dia e 
             <strong className="text-cobalt"> nunca mais perder uma venda por demora na resposta</strong>.
           </p>
-        </div>
-
-        {/* Guarantees */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {guarantees.map((guarantee, index) => (
-            <Card 
-              key={index}
-              className="p-6 border-cobalt/20 bg-cobalt/5 hover:shadow-lg transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${0.8 + index * 0.1}s` }}
-            >
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-cobalt/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <guarantee.icon className="w-6 h-6 text-cobalt" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">{guarantee.title}</h4>
-                  <p className="text-muted-foreground">{guarantee.description}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
         </div>
 
         {/* CTA */}

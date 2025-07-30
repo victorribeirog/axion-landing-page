@@ -57,12 +57,12 @@ const FinalCTASection = () => {
         
         <div className="animate-fade-in" style={{ animationDelay: '0.7s' }}>
           <Button 
-            variant="cobalt" 
+            variant="cobalt-pulse" 
             size="lg" 
-            className="text-lg sm:text-xl font-bold px-12 py-6 bg-white text-primary hover:bg-white/90 glow-effect shadow-lg shadow-cobalt/10 transform hover:scale-105"
+            className="text-xl px-12 py-6 bg-white text-primary hover:bg-white/90 transform hover:scale-110 shadow-2xl"
             onClick={() => openWhatsApp(whatsappMessages.finalCta)}
           >
-            Implementar IA Agora - Últimas Vagas Janeiro →
+            🚀 Comece Agora - Transforme Sua Clínica!
           </Button>
           
           <p className="text-primary-foreground/60 text-sm mt-4">

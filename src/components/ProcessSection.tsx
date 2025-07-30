@@ -84,9 +84,6 @@ const ProcessSection = () => {
           >
             Implementar na Minha Clínica Agora →
           </Button>
-          <p className="text-sm text-muted-foreground mt-3">
-            <span className="text-cobalt font-medium">Funcionando em 48h</span> ou menos
-          </p>
         </div>
       </div>
     </section>
