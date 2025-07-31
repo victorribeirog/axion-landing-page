@@ -113,37 +113,6 @@ const TestimonialsSection = () => {
 
         {/* WhatsApp Demo */}
         <div className="max-w-md mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.7s' }}>
-          <h3 className="text-xl font-semibold text-center mb-6 text-foreground">
-            Veja o Agente em Ação: <span className="text-cobalt">Vendendo Sozinho</span>
-          </h3>
-          
-          <div className="bg-white rounded-3xl p-4 shadow-lg border">
-            <div className="bg-green-500 text-white p-3 rounded-t-xl text-center text-sm font-medium">
-              WhatsApp Business - Clínica
-            </div>
-            
-            <div className="bg-gray-50 p-4 max-h-64 overflow-y-auto space-y-3">
-              {whatsappDemo.messages.map((message, index) => (
-                <div 
-                  key={index}
-                  className={`flex ${message.sender === 'client' ? 'justify-end' : 'justify-start'}`}
-                >
-                  <div className={`max-w-xs p-2 rounded-lg text-sm ${
-                    message.sender === 'client' 
-                      ? 'bg-green-500 text-white' 
-                      : 'bg-white border shadow-sm'
-                  }`}>
-                    <p>{message.text}</p>
-                    <span className="text-xs opacity-70 mt-1 block">{message.time}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center py-3 text-xs text-gray-500">
-              ✅ Lead convertido em consulta automaticamente
-            </div>
-          </div>
         </div>
 
         {/* CTA */}
@@ -154,7 +123,7 @@ const TestimonialsSection = () => {
             className="text-base glow-effect"
             onClick={() => openWhatsApp(whatsappMessages.testimonials)}
           >
-            Quero Resultados Como Estes →
+            Quero Resultados Como Estes
           </Button>
         </div>
       </div>

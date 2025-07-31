@@ -54,7 +54,7 @@ const NavigationMenu = () => {
                 : "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:relative md:left-0 md:top-0 md:transform-none"
             )}
           >
-            <img src={axonpreto} alt="AXON AI" className={cn("w-auto transition-all duration-300", isScrolled ? "h-16" : "h-20")} />
+            <img src={axonpreto} alt="AXON AI" className={cn("w-auto transition-all duration-300", isScrolled ? "h-20" : "h-20")} />
           </button>
 
           {/* Desktop Menu */}

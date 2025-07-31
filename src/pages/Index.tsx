@@ -4,7 +4,6 @@ import SolutionSection from "@/components/SolutionSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ProcessSection from "@/components/ProcessSection";
 import AboutAxonSection from "@/components/AboutAxonSection";
-import TargetAudienceSection from "@/components/TargetAudienceSection";
 import ProofSection from "@/components/ProofSection";
 import CustomizationSection from "@/components/CustomizationSection";
 import FAQSection from "@/components/FAQSection";
@@ -37,11 +36,6 @@ const Index = () => {
       {/* 6. About AXON Section - Credibilidade */}
       <div id="about">
         <AboutAxonSection />
-      </div>
-      
-      {/* 7. Target Audience Section - Para Quem É */}
-      <div id="target">
-        <TargetAudienceSection />
       </div>
       
       {/* 8. Proof Section - Autoridade */}

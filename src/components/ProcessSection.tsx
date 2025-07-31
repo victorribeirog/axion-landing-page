@@ -83,7 +83,7 @@ const ProcessSection = () => {
             onClick={() => openWhatsApp(whatsappMessages.process)}
           >
             <span className="block md:hidden">Implementar Agora →</span>
-            <span className="hidden md:block">Implementar na Minha Clínica Agora →</span>
+            <span className="hidden md:block">Implementar na Minha Clínica Agora</span>
           </Button>
         </div>
       </div>
