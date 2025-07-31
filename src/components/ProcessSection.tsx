@@ -25,7 +25,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="process" className="py-20 bg-secondary relative overflow-hidden">
+    <section id="process" className="py-20 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">

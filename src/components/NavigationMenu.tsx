@@ -32,14 +32,15 @@ const NavigationMenu = () => {
     { label: "Início", id: "hero" },
     { label: "Problemas", id: "problems" },
     { label: "Solução", id: "solution" },
+    { label: "Depoimentos", id: "testimonials" },
+    { label: "Sobre Nós", id: "about" },
     { label: "Como Funciona", id: "process" },
     { label: "Resultados", id: "proof" },
-    { label: "Personalização", id: "customization" },
   ];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-      ? 'bg-secondary/95 backdrop-blur-sm border-b border-border shadow-lg'
+      ? 'bg-background/95 backdrop-blur-sm border-b border-border shadow-lg'
       : 'bg-transparent'
       }`}>
       <div className="container mx-auto justify-between h-20 px-4 relative">
@@ -53,7 +54,7 @@ const NavigationMenu = () => {
                 : "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:relative md:left-0 md:top-0 md:transform-none"
             )}
           >
-            <img src={axonpreto} alt="AXON AI" className="h-28 w-auto" />
+            <img src={axonpreto} alt="AXON AI" className={cn("w-auto transition-all duration-300", isScrolled ? "h-16" : "h-20")} />
           </button>
 
           {/* Desktop Menu */}
