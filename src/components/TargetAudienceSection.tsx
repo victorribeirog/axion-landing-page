@@ -189,10 +189,11 @@ const TargetAudienceSection = () => {
             <Button 
               variant="cobalt" 
               size="lg" 
-              className="text-base glow-effect overflow-hidden"
+              className="text-sm md:text-base glow-effect overflow-hidden whitespace-normal md:whitespace-nowrap px-4 md:px-8 max-w-xs md:max-w-none"
               onClick={() => openWhatsApp(whatsappMessages.targetAudience)}
             >
-              Verificar Meu Perfil Gratuitamente →
+              <span className="block md:hidden">Análise Gratuita →</span>
+              <span className="hidden md:block">Verificar Meu Perfil Gratuitamente →</span>
             </Button>
             
             <p className="text-sm text-muted-foreground mt-3">

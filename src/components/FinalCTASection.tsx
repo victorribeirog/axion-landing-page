@@ -55,14 +55,15 @@ const FinalCTASection = () => {
           ))}
         </div>
         
-        <div className="animate-fade-in" style={{ animationDelay: '0.7s' }}>
+        <div className="animate-fade-in px-4" style={{ animationDelay: '0.7s' }}>
           <Button 
             variant="cobalt-pulse" 
             size="lg" 
-            className="text-xl px-12 py-6 bg-white text-primary hover:bg-white/90 transform hover:scale-110 shadow-2xl overflow-hidden"
+            className="text-base md:text-xl px-4 md:px-8 py-3 md:py-6 bg-white text-primary hover:bg-white/90 transform hover:scale-110 shadow-2xl overflow-hidden whitespace-normal md:whitespace-nowrap max-w-xs md:max-w-none"
             onClick={() => openWhatsApp(whatsappMessages.finalCta)}
           >
-            🚀 Comece Agora - Transforme Sua Clínica!
+            <span className="block md:hidden">🚀 Começar Agora!</span>
+            <span className="hidden md:block">🚀 Comece Agora - Transforme Sua Clínica!</span>
           </Button>
           
           <p className="text-primary-foreground/60 text-sm mt-4">

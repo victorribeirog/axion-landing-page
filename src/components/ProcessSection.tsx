@@ -75,14 +75,15 @@ const ProcessSection = () => {
           </div>
         </div>
         
-        <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+        <div className="text-center mt-16 animate-fade-in px-4" style={{ animationDelay: '0.8s' }}>
           <Button 
             variant="cobalt" 
             size="lg" 
-            className="text-base glow-effect"
+            className="text-sm md:text-base glow-effect whitespace-normal md:whitespace-nowrap px-4 md:px-8 max-w-xs md:max-w-none"
             onClick={() => openWhatsApp(whatsappMessages.process)}
           >
-            Implementar na Minha Clínica Agora →
+            <span className="block md:hidden">Implementar Agora →</span>
+            <span className="hidden md:block">Implementar na Minha Clínica Agora →</span>
           </Button>
         </div>
       </div>
