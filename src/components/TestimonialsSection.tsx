@@ -3,6 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Star, MessageCircle, TrendingUp, Clock } from "lucide-react";
 import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
 import doctor from "@/assets/doctor.jpg";
+import estetica from "@/assets/estetica.jpg";
+import dentista from "@/assets/dentista.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
