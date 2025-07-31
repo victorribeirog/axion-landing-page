@@ -30,14 +30,14 @@ const ProofSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-primary">
       <div className="container mx-auto px-4">
         {/* Título e Estatísticas */}
         <div className="text-center mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
             Resultados que Falam por Si
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-primary-foreground max-w-3xl mx-auto">
             Os números comprovam o impacto do Agente IA na eficiência e crescimento das clínicas.
           </p>
         </div>
@@ -64,7 +64,7 @@ const ProofSection = () => {
         
         {/* Tabela Comparativa */}
         <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.7s' }}>
-          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-center text-foreground mb-6 md:mb-8">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-center text-primary-foreground mb-6 md:mb-8">
             Agente IA vs. Atendimento Tradicional
           </h3>
           
@@ -73,15 +73,15 @@ const ProofSection = () => {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-1/3 text-base">Funcionalidade</TableHead>
-                  <TableHead className="text-center text-base bg-cobalt/5 text-cobalt">Agente IA</TableHead>
-                  <TableHead className="text-center text-base">Atendimento Tradicional</TableHead>
+                  <TableHead className="w-1/3 text-base text-primary-foreground">Funcionalidade</TableHead>
+                  <TableHead className="text-center text-base bg-cobalt/50 text-primary-foreground">Agente IA</TableHead>
+                  <TableHead className="text-center text-base text-primary-foreground">Atendimento Tradicional</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <TableCell className="font-medium">Disponibilidade</TableCell>
-                  <TableCell className="text-center bg-cobalt/5">
+                  <TableCell className="font-medium text-primary-foreground">Disponibilidade</TableCell>
+                  <TableCell className="text-center bg-cobalt/50">
                     <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
                     <span className="sr-only">Sim</span>
                   </TableCell>
@@ -91,8 +91,8 @@ const ProofSection = () => {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Atendimento 24/7</TableCell>
-                  <TableCell className="text-center bg-cobalt/5">
+                  <TableCell className="font-medium text-primary-foreground">Atendimento 24/7</TableCell>
+                  <TableCell className="text-center bg-cobalt/50">
                     <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
                   </TableCell>
                   <TableCell className="text-center">
@@ -100,8 +100,8 @@ const ProofSection = () => {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Respostas Instantâneas</TableCell>
-                  <TableCell className="text-center bg-cobalt/5">
+                  <TableCell className="font-medium text-primary-foreground">Respostas Instantâneas</TableCell>
+                  <TableCell className="text-center bg-cobalt/50">
                     <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
                   </TableCell>
                   <TableCell className="text-center">
@@ -109,8 +109,8 @@ const ProofSection = () => {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Agendamento sem intervenção humana</TableCell>
-                  <TableCell className="text-center bg-cobalt/5">
+                  <TableCell className="font-medium text-primary-foreground">Agendamento sem intervenção humana</TableCell>
+                  <TableCell className="text-center bg-cobalt/50">
                     <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
                   </TableCell>
                   <TableCell className="text-center">
@@ -118,8 +118,8 @@ const ProofSection = () => {
                   </TableCell>
                 </TableRow>
                  <TableRow>
-                  <TableCell className="font-medium">Custo Escalável</TableCell>
-                  <TableCell className="text-center bg-cobalt/5">
+                  <TableCell className="font-medium text-primary-foreground">Custo Escalável</TableCell>
+                  <TableCell className="text-center bg-cobalt/50">
                     <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
                   </TableCell>
                   <TableCell className="text-center">

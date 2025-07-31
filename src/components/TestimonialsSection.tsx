@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Star, MessageCircle, TrendingUp, Clock } from "lucide-react";
 import { openWhatsApp, whatsappMessages } from "@/lib/whatsapp";
+import doctor from "@/assets/doctor.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -36,17 +37,6 @@ const TestimonialsSection = () => {
     { icon: TrendingUp, value: "+58%", label: "Aumento em Vendas" },
     { icon: Clock, value: "24/7", label: "Atendimento Contínuo" }
   ];
-
-  const whatsappDemo = {
-    messages: [
-      { sender: "client", text: "Oi, queria saber sobre implante dentário", time: "14:23" },
-      { sender: "ai", text: "Olá! 😊 Que bom que você tem interesse! Para te dar o melhor atendimento, me conta: é seu primeiro implante?", time: "14:23" },
-      { sender: "client", text: "Sim, é o primeiro", time: "14:24" },
-      { sender: "ai", text: "Perfeito! Temos um protocolo especial para primeiros implantes. Posso agendar sua avaliação gratuita para amanhã às 14h?", time: "14:24" },
-      { sender: "client", text: "Pode sim!", time: "14:25" },
-      { sender: "ai", text: "✅ Agendado! Dr. Carlos te aguarda amanhã às 14h. Vou te enviar a localização e preparativos por aqui.", time: "14:25" }
-    ]
-  };
 
   return (
     <section id="testimonials" className="py-20 bg-secondary relative overflow-hidden">
@@ -109,10 +99,6 @@ const TestimonialsSection = () => {
               </div>
             </Card>
           ))}
-        </div>
-
-        {/* WhatsApp Demo */}
-        <div className="max-w-md mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.7s' }}>
         </div>
 
         {/* CTA */}

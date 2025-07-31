@@ -28,7 +28,7 @@ const AboutAxonSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background relative overflow-hidden">
+    <section id="about" className="py-20 bg-secondary relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">

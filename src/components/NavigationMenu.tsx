@@ -33,8 +33,8 @@ const NavigationMenu = () => {
     { label: "Problemas", id: "problems" },
     { label: "Solução", id: "solution" },
     { label: "Depoimentos", id: "testimonials" },
-    { label: "Sobre Nós", id: "about" },
     { label: "Como Funciona", id: "process" },
+    { label: "Sobre Nós", id: "about" },
     { label: "Resultados", id: "proof" },
   ];
 
@@ -54,7 +54,7 @@ const NavigationMenu = () => {
                 : "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:relative md:left-0 md:top-0 md:transform-none"
             )}
           >
-            <img src={axonpreto} alt="AXON AI" className={cn("w-auto transition-all duration-300", isScrolled ? "h-20" : "h-20")} />
+            <img src={axonpreto} alt="AXON AI" className={cn("w-auto transition-all duration-300", isScrolled ? "h-28" : "h-28")} />
           </button>
 
           {/* Desktop Menu */}
@@ -63,7 +63,12 @@ const NavigationMenu = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-black hover:text-cobalt transition-colors relative group"
+                className={cn(
+                "text-sm font-medium transition-colors",
+                isScrolled
+                  ? "text-black hover:text-black"
+                  : "text-white hover:text-white"
+              )}
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cobalt transition-all duration-300 group-hover:w-full" />
