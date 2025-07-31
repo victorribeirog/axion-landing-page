@@ -64,10 +64,12 @@ const ProofSection = () => {
         
         {/* Tabela Comparativa */}
         <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.7s' }}>
-          <h3 className="text-2xl lg:text-3xl font-bold text-center text-foreground mb-8">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-center text-foreground mb-6 md:mb-8">
             Agente IA vs. Atendimento Tradicional
           </h3>
-          <div className="border rounded-2xl overflow-hidden shadow-lg">
+          
+          {/* Desktop Table */}
+          <div className="hidden md:block border rounded-2xl overflow-hidden shadow-lg">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -126,6 +128,31 @@ const ProofSection = () => {
                 </TableRow>
               </TableBody>
             </Table>
+          </div>
+
+          {/* Mobile Cards */}
+          <div className="md:hidden space-y-3 px-4">
+            {[
+              { feature: "Disponibilidade", mobileFeature: "Disponibilidade" },
+              { feature: "Atendimento 24/7", mobileFeature: "Atendimento 24/7" },
+              { feature: "Respostas Instantâneas", mobileFeature: "Respostas instantâneas" },
+              { feature: "Agendamento sem intervenção humana", mobileFeature: "Agendamento automático" },
+              { feature: "Custo Escalável", mobileFeature: "Custo escalável" },
+            ].map((item, index) => (
+              <div key={index} className="bg-card border rounded-lg p-4 shadow-sm">
+                <h4 className="font-semibold text-foreground mb-3 text-sm">{item.mobileFeature}</h4>
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-xs font-medium text-cobalt">Agente IA</span>
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-xs font-medium text-muted-foreground">Tradicional</span>
+                    <XCircle className="w-4 h-4 text-destructive" />
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
