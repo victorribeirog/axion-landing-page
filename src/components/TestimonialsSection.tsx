@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
       role: "Médico",
       content: "Antes perdíamos 40% dos leads por demora no atendimento. Agora o agente responde na hora e nossa conversão subiu 65%. Incrível!",
       result: "65% + conversão",
-      avatar: "🩺",
+      avatar: doctor,
       rating: 5
     },
     {
@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
       role: "Estética",
       content: "O agente entende perfeitamente nossas especialidades e já agenda consultas direto na agenda. Economizamos 20h/semana de atendimento.",
       result: "20h/semana economizadas",
-      avatar: "💅",
+      avatar: estetica,
       rating: 5
     },
     {
@@ -29,7 +29,7 @@ const TestimonialsSection = () => {
       role: "Dentista",
       content: "Implementamos e já no primeiro mês recuperamos o investimento. O melhor: funciona 24h, nunca para de vender.",
       result: "ROI em 30 dias",
-      avatar: "🦷",
+      avatar: dentista,
       rating: 5
     }
   ];
@@ -77,8 +77,12 @@ const TestimonialsSection = () => {
               style={{ animationDelay: `${0.4 + index * 0.1}s` }}
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-cobalt/10 rounded-full flex items-center justify-center text-xl mr-3">
-                  {testimonial.avatar}
+                <div className="w-12 h-12 rounded-full overflow-hidden mr-3">
+                  <img 
+                    src={testimonial.avatar} 
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
